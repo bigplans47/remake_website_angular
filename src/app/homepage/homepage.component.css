@@ -12,10 +12,11 @@
 
 .aHeader{
   display: inline-block;
-  height: 50px;
-  font-size: 14px;
+  height: 40px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
+  font-family: Arial;
   /* display: inline; */
   background: red;
   padding: 10px;
@@ -25,7 +26,7 @@
 .aImage {
   width: 200px;
   display: inline-block;
-  height: 50px;
+  height: 40px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -33,9 +34,10 @@
   background: red;
   padding: 10px;
   margin: 2px;
-  background: url("tripAdvisorLogo.png") center ;
+  background: url("assets/tripAdvisorLogo.png") center;
   background-size: 100%;
   background-repeat: no-repeat;
+  color: white;
   /* background-size: 100px auto;
     display: inline-block;
     width:20px;
