@@ -1,9 +1,10 @@
 .manImg {
   width: 200px;
+  /* height: 500px; */
 }
 
 .placeholder1 {
-  height: 30px;
+  height: 50px;
   width: 200px;
   background-color: yellow
 }
@@ -26,7 +27,7 @@
   position:absolute;
     width:80%;
     height:10%;
-    background:red;
+    background:gray;
     left:10%;
     top:40%;
     border-radius: 20px;

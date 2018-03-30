@@ -1,4 +1,4 @@
-A Project to make a Doctor Info API
+A Project to make a website using Angular
 
 Remake the Trip Advisor website using the Javascript Angular 5 framework. This site is meant to focus on showing the user local destinations in Budapest and can collect additional places in Budapest to add to its database of places to see.
 
