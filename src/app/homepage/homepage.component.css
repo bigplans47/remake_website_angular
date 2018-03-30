@@ -8,15 +8,26 @@
   background-color: yellow
 }
 
-.spanHeader{
+.aHeader{
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   display: inline;
+  background: red;
 }
 
 .search{
    /* background-image: url("https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg"); */
    background-color: lightblue;
    height: 400px;
+}
+
+.searchBar{
+  position:absolute;
+    width:80%;
+    height:10%;
+    background:red;
+    left:10%;
+    top:40%;
+    border-radius: 20px;
 }
