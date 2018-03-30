@@ -1,0 +1,22 @@
+.manImg {
+  width: 200px;
+}
+
+.placeholder1 {
+  height: 30px;
+  width: 200px;
+  background-color: yellow
+}
+
+.spanHeader{
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  display: inline;
+}
+
+.search{
+   /* background-image: url("https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg"); */
+   background-color: lightblue;
+   height: 400px;
+}
