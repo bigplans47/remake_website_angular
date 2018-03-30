@@ -1,6 +1,5 @@
 .manImg {
   width: 200px;
-  /* height: 500px; */
 }
 
 .placeholder1 {
@@ -17,7 +16,6 @@
   font-weight: bold;
   text-align: center;
   font-family: Arial;
-  /* display: inline; */
   background: #ADD8E6;
   padding-right: 5px;
   padding-left: 5px;
@@ -32,12 +30,10 @@
   font-weight: bold;
   text-align: center;
   font-family: Arial;
-  /* display: inline; */
   background: #ADD8E6;
   padding-right: 5px;
   padding-left: 150px;
   padding-top: 30px;
-  /* margin: 2px; */
 }
 
 .aImage {
@@ -51,7 +47,6 @@
   background: #ADD8E6;
   padding: 10px;
   padding-top: 20px;
-  /* margin: 2px; */
   background: url("assets/tripAdvisorLogo.png") center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -59,18 +54,92 @@
 }
 
 .search{
-   /* background-image: url("https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg"); */
    background: url("assets/mainViewBudapest.jpg") center;
    background-color: lightblue;
    height: 400px;
 }
 
+.searchText {
+  position:absolute;
+  font-weight: bold;
+  font-size: 32px;
+  top:30%;
+  color: white;
+  left:30%;
+  background-color: #2F4F4F;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 .searchBar{
   position:absolute;
-    width:80%;
-    height:10%;
-    background:gray;
-    left:10%;
-    top:40%;
-    border-radius: 20px;
+  width:80%;
+  height:10%;
+  background:white;
+  left:10%;
+  top:40%;
+  border-radius: 20px;
+}
+
+#dollar{
+  background: url("assets/DollarIcon.svg") center;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+
+#bed{
+  background: url("assets/iconBed.svg") center;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+
+#heart{
+  background: url("assets/heartIcon.png") center;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px;
+}
+
+#box{
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  border: 1px solid #00a680;
+  margin-left: 200px;
+  border-radius: 3px;
+  background: url("assets/brandingLittleWiser.png") center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #00a680;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+/* line-height: 28px; */
+  /* border-color: black;
+  border-style: 2px solid */
+
+}
+
+.info .money{
+  color: #00a680;
+  font-size: 28px;
+  font-family: Arial;
+}
+
+a:hover {
+  color: #00a680;
 }
