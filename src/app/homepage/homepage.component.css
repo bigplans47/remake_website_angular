@@ -12,40 +12,55 @@
 
 .aHeader{
   display: inline-block;
-  height: 40px;
+  height: 20px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   font-family: Arial;
   /* display: inline; */
-  background: red;
-  padding: 10px;
-  margin: 2px;
+  background: #ADD8E6;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 30px;
+  /* margin: 2px; */
+}
+
+.aHeaderDot{
+  display: inline-block;
+  height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial;
+  /* display: inline; */
+  background: #ADD8E6;
+  padding-right: 5px;
+  padding-left: 150px;
+  padding-top: 30px;
+  /* margin: 2px; */
 }
 
 .aImage {
   width: 200px;
   display: inline-block;
-  height: 40px;
+  height:20px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   /* display: inline; */
-  background: red;
+  background: #ADD8E6;
   padding: 10px;
-  margin: 2px;
+  padding-top: 20px;
+  /* margin: 2px; */
   background: url("assets/tripAdvisorLogo.png") center;
   background-size: 100%;
   background-repeat: no-repeat;
   color: white;
-  /* background-size: 100px auto;
-    display: inline-block;
-    width:20px;
-    height: 20px; */
 }
 
 .search{
    /* background-image: url("https://commons.wikimedia.org/wiki/File:Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg"); */
+   background: url("assets/mainViewBudapest.jpg") center;
    background-color: lightblue;
    height: 400px;
 }
