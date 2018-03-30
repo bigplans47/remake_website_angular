@@ -6,15 +6,40 @@
 .placeholder1 {
   height: 50px;
   width: 200px;
-  background-color: yellow
+  background-color: yellow;
+  position: relative;
 }
 
 .aHeader{
+  display: inline-block;
+  height: 50px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  display: inline;
+  /* display: inline; */
   background: red;
+  padding: 10px;
+  margin: 2px;
+}
+
+.aImage {
+  width: 200px;
+  display: inline-block;
+  height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  /* display: inline; */
+  background: red;
+  padding: 10px;
+  margin: 2px;
+  background: url("tripAdvisorLogo.png") center ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* background-size: 100px auto;
+    display: inline-block;
+    width:20px;
+    height: 20px; */
 }
 
 .search{
