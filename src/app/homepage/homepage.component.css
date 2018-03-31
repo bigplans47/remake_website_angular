@@ -140,6 +140,10 @@
   color: black;
 }
 
+.info {
+  width: 100vw;
+}
+
 .info .money{
   color: #00a680;
   font-size: 28px;
