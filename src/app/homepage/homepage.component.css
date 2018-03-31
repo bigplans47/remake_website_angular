@@ -115,23 +115,29 @@
 }
 
 #box{
+  position: relative;
   display: inline-block;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   border: 1px solid #00a680;
-  margin-left: 200px;
+  margin-left: 100px;
   border-radius: 3px;
-  background: url("assets/brandingLittleWiser.png") center;
+  background: url("assets/brandingLittleWiser.png") left;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 80%;
   color: #00a680;
   padding: 10px;
   font-size: 24px;
   text-align: center;
+  vertical-align: bottom;
+  background-position: 50% 100% ;
 /* line-height: 28px; */
   /* border-color: black;
   border-style: 2px solid */
+}
 
+#displayAd {
+  color: black;
 }
 
 .info .money{
