@@ -153,3 +153,15 @@
 a:hover {
   color: #00a680;
 }
+
+.inline{
+  display: inline-block;
+}
+
+.compares{
+  font-size: 20px;
+}
+
+.sightsIntro{
+  font-size: 30px;
+}
