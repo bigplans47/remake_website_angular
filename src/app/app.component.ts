@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Place } from './models/place.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  test: string = 'suptest'
+  places: Place[] = [
+    new Place('place1', 5, 'picture_url'),
+    new Place('place2', 5, 'picture_url'),
+    new Place('place3', 5, 'picture_url'),
+    new Place('place4', 5, 'picture_url')
+  ]
+
+  likePlace(whatLiked) {
+    whatLiked.likes++;
+    console.log(whatLiked.likes);
+  }
 }

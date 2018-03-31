@@ -1,4 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
   <app-homepage></app-homepage>
+  <p class="sightsIntro">Sights and landmarks in Budapest</p>
+  <tr>
+    <th alight="left">Name</th>
+    <th alight="left">Rating</th>
+    <th alight="left">Picture</th>
+  </tr>
+  <h3>{{test}}</h3>
+  <ul *ngFor="let singlePlace of places">
+    <!-- <li [(ngModel)]="singlePlace.name" type="text" name="name"></li> -->
+    <!-- <li [(ngModel)]="singlePlace.rating" type="text" name="rating"></li> -->
+    <!-- <li [(ngModel)]="singlePlace.picture" type="text" name="picture"></li> -->
+  </ul>
+  <button (click)="likePlace(singlePlace)" type="button" name="button"></button>
 </div>
+<!-- name: string, public rating: number, public picture: -->
