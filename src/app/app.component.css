@@ -5,3 +5,10 @@ body{
 .sightsIntro{
   font-size: 30px;
 }
+
+#picture{
+  background: url("http://jonvilma.com/images/budapest-15.jpg") left;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  height: 100px;
+}
