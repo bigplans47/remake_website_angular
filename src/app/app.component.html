@@ -2,4 +2,4 @@
   <app-homepage></app-homepage>
   <p>placeholder1</p>
 </div>
-<app-list-of-places [childPlacesList]="masterPlaces"></app-list-of-places>
+<app-list-of-places [childPlacesList]="masterPlaces" (clickSender)="likePlace($event)"></app-list-of-places>

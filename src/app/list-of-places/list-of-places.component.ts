@@ -11,6 +11,10 @@ export class ListOfPlacesComponent implements OnInit {
   @Input() childPlacesList: Place[];
   @Output() clickSender = new EventEmitter();
 
+  editButtonClicked(place){
+    this.clickSender.emit(place)
+  }
+
   constructor() { }
 
   ngOnInit() {
