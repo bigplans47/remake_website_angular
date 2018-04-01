@@ -1,19 +1,5 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div>
   <app-homepage></app-homepage>
-  <p class="sightsIntro">Sights and landmarks in Budapest</p>
-  <table style="width:100%">
-    <tr>
-      <th alight="left">Name</th>
-      <th alight="left">Rating</th>
-      <th alight="left">Picture</th>
-    </tr>
-    <tr *ngFor="let singlePlace of places">
-      <th>{{singlePlace.name}}</th>
-      <th>{{singlePlace.rating}}</th>
-      <th id="picture">{{singlePlace.picture}}</th>
-    </tr>
-  </table>
-  <button (click)="likePlace(singlePlace)" type="button" name="button"></button>
+  <p>placeholder1</p>
 </div>
-<!-- name: string, public rating: number, public picture: -->
+<app-list-of-places [childPlacesList]="masterPlaces"></app-list-of-places>

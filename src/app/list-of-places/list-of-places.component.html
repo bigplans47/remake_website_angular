@@ -1,0 +1,16 @@
+<p class="sightsIntro">Sights and landmarks in Budapest</p>
+<table style="width:100%">
+  <tr>
+    <th alight="left">Name</th>
+    <th alight="left">Rating</th>
+    <th alight="left">Likes</th>
+  </tr>
+  <tr *ngFor="let singlePlace of childPlacesList">
+    <th>{{singlePlace.name}}</th>
+    <th>{{singlePlace.rating}}</th>
+    <th>{{singlePlace.likes}}</th>
+    <button class="btn btn-success btn-sm" type="button" (click)="likePlace(singlePlace)"  name="button">Like this place</button>
+    <br>
+    <!-- <th id="picture">{{singlePlace.picture}}</th> -->
+  </tr>
+</table>
