@@ -7,7 +7,7 @@ import { Place } from './models/place.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  test: string = 'suptest'
+  test: string = 'add component test'
   masterPlaces: Place[] = [
     new Place('place1', 5, 'picture_url'),
     new Place('place2', 5, 'picture_url'),
@@ -18,5 +18,6 @@ export class AppComponent {
   likePlace(whatLiked) {
     whatLiked.likes++;
     console.log(whatLiked.likes);
+    console.log(this.masterPlaces)
   }
 }

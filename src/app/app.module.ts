@@ -5,17 +5,22 @@ import { FormsModule }  from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ListOfPlacesComponent } from './list-of-places/list-of-places.component';
+import { AddPlaceComponent } from './add-place/add-place.component';
+import { routing } from './app.routing';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    ListOfPlacesComponent
+    ListOfPlacesComponent,
+    AddPlaceComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    // HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

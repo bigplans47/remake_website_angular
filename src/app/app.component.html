@@ -3,3 +3,7 @@
   <p>placeholder1</p>
 </div>
 <app-list-of-places [childPlacesList]="masterPlaces" (clickSender)="likePlace($event)"></app-list-of-places>
+<div class="container">
+  <h3>{{test}}</h3>
+  <router-outlet></router-outlet>
+</div>
