@@ -8,6 +8,7 @@ import { ListOfPlacesComponent } from './list-of-places/list-of-places.component
 import { AddPlaceComponent } from './add-place/add-place.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
+import { PlaceDetailComponent } from './place-detail/place-detail.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AboutComponent } from './about/about.component';
     HomepageComponent,
     ListOfPlacesComponent,
     AddPlaceComponent,
-    AboutComponent
+    AboutComponent,
+    PlaceDetailComponent
   ],
   imports: [
     BrowserModule,

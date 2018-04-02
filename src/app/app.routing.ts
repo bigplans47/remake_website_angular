@@ -4,6 +4,8 @@ import { AddPlaceComponent } from './add-place/add-place.component'
 import { AboutComponent } from './about/about.component'
 import { HomepageComponent } from './homepage/homepage.component'
 import { ListOfPlacesComponent } from './list-of-places/list-of-places.component';
+import { PlaceDetailComponent } from './place-detail/place-detail.component';
+
 
 const appRoutes: Routes = [
   {
@@ -18,10 +20,10 @@ const appRoutes: Routes = [
     path: 'places',
     component: AddPlaceComponent
   },
-  // {
-  //   path: 'about',
-  //   component: AboutComponent
-  // },
+  {
+    path: 'places/:id',
+    component: PlaceDetailComponent
+  }
   // {
   //   path: 'about',
   //   component: AboutComponent

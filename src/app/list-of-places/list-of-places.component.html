@@ -6,11 +6,12 @@
     <th alight="left">Rating</th>
     <th alight="left">Likes</th>
   </tr>
-  <tr *ngFor="let singlePlace of childPlacesList">
-    <th>{{singlePlace.name}}</th>
+  <tr *ngFor="let singlePlace of childPlacesList" >
+    <th name="name">{{singlePlace.name}}</th>
     <th>{{singlePlace.rating}}</th>
     <th>{{singlePlace.likes}}</th>
-    <button class="btn btn-success btn-sm" type="button" (click)="editButtonClicked(singlePlace)"  name="button">Like this place</button>
+    <button class="btn btn-success btn-sm" type="button" (click)="editButtonClicked(singlePlace)" name="button">Like this place</button>
+    <button class="btn btn-info btn-sm" type="button" (click)="goToDetailPage(singlePlace)" name="button">Learn about this place</button>
     <br>
     <!-- <th id="picture">{{singlePlace.picture}}</th> -->
   </tr>
