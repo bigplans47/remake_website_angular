@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ListOfPlacesComponent } from './list-of-places/list-of-places.component';
 import { AddPlaceComponent } from './add-place/add-place.component';
 import { routing } from './app.routing';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { routing } from './app.routing';
     AppComponent,
     HomepageComponent,
     ListOfPlacesComponent,
-    AddPlaceComponent
+    AddPlaceComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
