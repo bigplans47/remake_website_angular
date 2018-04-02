@@ -18,12 +18,16 @@ const appRoutes: Routes = [
   },
   {
     path: 'places',
-    component: AddPlaceComponent
+    component: ListOfPlacesComponent
   },
   {
     path: 'places/:id',
     component: PlaceDetailComponent
-  }
+  },
+  {
+    path: 'addPlace',
+    component: AddPlaceComponent
+  },
   // {
   //   path: 'about',
   //   component: AboutComponent
