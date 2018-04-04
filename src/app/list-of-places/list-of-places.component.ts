@@ -1,7 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Place } from '../models/place.model';
 import { Router } from '@angular/router';
-import { PlaceService } from '../place.service'
+import { PlaceService } from '../place.service';
+import { FirebaseListObservable } from 'angularfire2/database'
 
 
 @Component({
@@ -11,11 +12,11 @@ import { PlaceService } from '../place.service'
   providers: [PlaceService]
 })
 export class ListOfPlacesComponent implements OnInit {
+  places: FirebaseListObservable<any[]>;
   @Input() childPlacesList: Place[];
   @Output() clickSender = new EventEmitter();
 
-  places: Place[];
-
+  // places: Place[];
   // places : Place [] = [
   //   new Place('place1', 5, 'picture_url'),
   //   new Place('place2', 5, 'picture_url'),

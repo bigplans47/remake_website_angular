@@ -1,0 +1,17 @@
+{ "places": [{
+    "name": "the chain bridge",
+    "rating": "5",
+    "picture": "picture_url",
+    "id": "1"
+  }, {
+    "name": "the chain bridge2",
+    "rating": "5",
+    "picture": "picture_url",
+    "id": "2"
+    }, {
+    "name": "the chain bridge3",
+    "rating": "5",
+    "picture": "picture_url",
+    "id": "3"
+      }]
+}

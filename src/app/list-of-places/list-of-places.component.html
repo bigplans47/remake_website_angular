@@ -1,20 +1,5 @@
 <hr>
 <p class="sightsIntro">Look at the Sights and landmarks in Budapest</p>
-<!-- <table style="width:100%">
-  <tr>
-    <th alight="left">Name</th>
-    <th alight="left">Rating</th>
-    <th alight="left">Likes</th>
-  </tr>
-  <tr *ngFor="let singlePlace of childPlacesList" >
-    <th name="name">{{singlePlace.name}}</th>
-    <th>{{singlePlace.rating}}</th>
-    <th>{{singlePlace.likes}}</th>
-    <button class="btn btn-success btn-sm" type="button" (click)="editButtonClicked(singlePlace)" name="button">Like this place</button>
-    <button class="btn btn-info btn-sm" type="button" (click)="goToDetailPage(singlePlace)" name="button">Learn about this place</button>
-    <br>
-  </table> -->
-
 <div class="row">
   <div class="col-md-3">
     <h4>NAME</h4>
@@ -27,7 +12,7 @@
   </div>
 </div>
 
-<div class="row" *ngFor="let singlePlace of places">
+<div class="row" *ngFor="let singlePlace of places | async">
   <div class="col-md-3">
     <h4>{{singlePlace.name}}</h4>
   </div>
@@ -44,7 +29,3 @@
     <button class="btn btn-info btn-sm" type="button" (click)="goToDetailPage(singlePlace)" name="button">Learn more</button>
   </div>
 </div>
-
-<!-- <div class="card" *ngFor="let single_place of places">
-  <li>{{single_place.name}}</li>
-</div> -->
