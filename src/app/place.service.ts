@@ -6,6 +6,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class PlaceService {
   places: FirebaseListObservable<any[]>;
+
   constructor(private database: AngularFireDatabase ) {
     this.places = database.list('places');
   }
@@ -14,12 +15,14 @@ export class PlaceService {
     return this.places;
   }
 
-  getPlaceById(placeId: number){
-    console.log(this.places)
-    for( var i = 0; i <=this.places.length -1; i++) {
-      if(this.places[i].id ===placeId) {
-        return this.places[i];
-        }
-      }
-    }
+  getPlaceById(placeId: string){
+    return this.database.object('places/' + placeId);
+  }
+    // console.log(this.places)
+    // for( var i = 0; i <=this.places.length -1; i++) {
+    //   if(this.places[i].id ===placeId) {
+    //     return this.places[i];
+    //     }
+    //   }
+    // }
 }

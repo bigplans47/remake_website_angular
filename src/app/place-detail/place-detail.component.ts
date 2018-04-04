@@ -12,16 +12,18 @@ import { PlaceService } from '../place.service';
   providers: [PlaceService]
 })
 export class PlaceDetailComponent implements OnInit {
-  placeId: number;
-  placeToDisplay: Place;
+  placeId: string;
+  placeToDisplay;
+
   constructor(
     private route: ActivatedRoute,
     private location: Location,
     private placeService: PlaceService
   ) { }
+
   ngOnInit() {
     this.route.params.forEach((urlParameters)=>{
-      this.placeId = parseInt(urlParameters['id']);
+      this.placeId = urlParameters['id'];
     });
     this.placeToDisplay = this.placeService.getPlaceById(this.placeId);  }
 
