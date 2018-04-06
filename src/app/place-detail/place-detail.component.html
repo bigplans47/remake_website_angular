@@ -1,6 +1,5 @@
 <div class="card">
-  <p>hi</p>
-  {{(placeToDisplay | async)?.name }}
-  <!-- <h3>{{(placeToDisplay |async)?.name}}</h3> -->
-  <!-- <h3>{{placeToDisplay.id}}</h3> -->
+  <h3>{{(placeToDisplay |async)?.name}}</h3>
+  <h3>Rating: {{(placeToDisplay | async)?.rating}}</h3>
+  <a href="{{(placeToDisplay | async)?.picture}}"><img class="imageHere" src="{{(placeToDisplay | async)?.picture}}" alt="the place"></a>
 </div>
