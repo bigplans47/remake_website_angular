@@ -4,10 +4,10 @@
   <div class="col-md-3">
     <h4>NAME</h4>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-1">
     <h4>RATING</h4>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-1">
     <h4>LIKES</h4>
   </div>
 </div>
@@ -16,16 +16,19 @@
   <div class="col-md-3">
     <h4>{{singlePlace.name}}</h4>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-1">
     <h4>{{singlePlace.rating}}</h4>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-1">
     <h4>{{singlePlace.likes}}</h4>
   </div>
   <div class="col-md-1">
-    <button class="btn btn-success btn-sm" type="button" (click)="editButtonClicked(singlePlace)" name="button">Like this place</button>
+    <button class="btn btn-success btn-sm" type="button" (click)="editButtonClicked(singlePlace)" name="button">Like</button>
   </div>
   <div class="col-md-1">
     <button class="btn btn-info btn-sm" type="button" (click)="goToDetailPage(singlePlace)" name="button">Learn more</button>
+  </div>
+  <div class="col-md-2" *ngIf="currentRoute==='/admin' ">
+    <h4>{{singlePlace.picture}}</h4>
   </div>
 </div>

@@ -15,11 +15,14 @@ export class ListOfPlacesComponent implements OnInit {
   places: FirebaseListObservable<any[]>;
   @Input() childPlacesList: Place[];
   @Output() clickSender = new EventEmitter();
-
+  currentRoute: string = this.router.url;
+  
   constructor(private router: Router, private placeService: PlaceService){}
 
   ngOnInit() {
     this.places = this.placeService.getPlaces();
+
+    // console.log(this.router.url)
   }
 
   editButtonClicked(place){
