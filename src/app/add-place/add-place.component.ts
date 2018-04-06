@@ -15,4 +15,9 @@ export class AddPlaceComponent implements OnInit {
   ngOnInit() {
   }
 
+  submitPlace(nameOfPlace, ratingOfPlace, pictureOfPlace){
+    let newPlace = new Place(nameOfPlace, ratingOfPlace, pictureOfPlace);
+    this.placeService.addPlace(newPlace);
+  }
+
 }

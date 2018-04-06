@@ -1,3 +1,13 @@
 <div class="card">
   <h1>ADD PLACE</h1>
+  <label>Name</label>
+  <input #name>
+  <br>
+  <label>Rating</label>
+  <input #place>
+  <br>
+  <label>Picture URL Link</label>
+  <input #pictureURL>
+  <br>
+  <button class="btn btn-success" (click)="submitPlace(name.value, place.value, pictureURL.value); name.value='';place.value='';pictureURL.value='' ">Add me!</button>
 </div>
