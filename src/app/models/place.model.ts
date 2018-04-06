@@ -1,5 +1,3 @@
-
-
 export class Place {
   public location: string = 'Budapest';
   public likes: number = 100;

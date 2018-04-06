@@ -8,7 +8,7 @@ export class PlaceService {
   places: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase ) {
-    this.places = database.list('places');
+    this.places = database.list('places2');
   }
 
   getPlaces() {
@@ -17,6 +17,10 @@ export class PlaceService {
 
   getPlaceById(placeId: string){
     return this.database.object('places/' + placeId);
+  }
+
+  addPlace(thePlace: Place) {
+    this.places.push(thePlace);
   }
     // console.log(this.places)
     // for( var i = 0; i <=this.places.length -1; i++) {
