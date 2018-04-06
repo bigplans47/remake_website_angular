@@ -26,9 +26,10 @@
     <button class="btn btn-success btn-sm" type="button" (click)="editButtonClicked(singlePlace)" name="button">Like</button>
   </div>
   <div class="col-md-1">
-    <button class="btn btn-info btn-sm" type="button" (click)="goToDetailPage(singlePlace)" name="button">Learn more</button>
+    <button class="btn btn-info btn-sm" type="button" (click)="goToDetailPage(singlePlace)" name="button">See info</button>
   </div>
-  <div class="col-md-2" *ngIf="currentRoute==='/admin' ">
-    <h4>{{singlePlace.picture}}</h4>
+  <br>
+  <div *ngIf="currentRoute==='/admin' ">
+    <app-edit [selectedPlace]="singlePlace"></app-edit>
   </div>
 </div>

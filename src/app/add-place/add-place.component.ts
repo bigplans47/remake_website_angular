@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { PlaceService } from '../place.service';
 import { Place } from '../models/place.model';
 
@@ -9,7 +9,7 @@ import { Place } from '../models/place.model';
   providers: [PlaceService]
 })
 export class AddPlaceComponent implements OnInit {
-
+  @Input() selectedPlace;
   constructor(private placeService: PlaceService) { }
 
   ngOnInit() {

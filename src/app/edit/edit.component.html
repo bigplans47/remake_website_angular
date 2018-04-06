@@ -1,0 +1,12 @@
+<p>
+  edit works!
+</p>
+<div class="card">
+  <label>Name</label>
+  <input [(ngModel)]="selectedPlace.name">
+  <label>Rating</label>
+  <input [(ngModel)]="selectedPlace.rating">
+  <label>Picture URL</label>
+  <input [(ngModel)]="selectedPlace.picture">
+  <button (click)="saveEdits(selectedPlace)" type="button" name="button">Save Edits</button>
+</div>

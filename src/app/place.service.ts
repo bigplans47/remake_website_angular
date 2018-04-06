@@ -22,11 +22,14 @@ export class PlaceService {
   addPlace(thePlace: Place) {
     this.places.push(thePlace);
   }
-    // console.log(this.places)
-    // for( var i = 0; i <=this.places.length -1; i++) {
-    //   if(this.places[i].id ===placeId) {
-    //     return this.places[i];
-    //     }
-    //   }
-    // }
+
+  updatePlace(thePlaceUpdating){
+    var databaseEntryForPlace = this.getPlaceById(thePlaceUpdating.$key);
+    databaseEntryForPlace.update({
+      name: thePlaceUpdating.name,
+      rating: thePlaceUpdating.rating,
+      picture: thePlaceUpdating.picture
+    });
+  }
+  
 }
