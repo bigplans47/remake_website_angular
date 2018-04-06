@@ -12,6 +12,7 @@ import { PlaceDetailComponent } from './place-detail/place-detail.component';
 import { AngularFireModule } from 'angularfire2';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     ListOfPlacesComponent,
     AddPlaceComponent,
     AboutComponent,
-    PlaceDetailComponent
+    PlaceDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
