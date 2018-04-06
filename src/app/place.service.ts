@@ -16,7 +16,7 @@ export class PlaceService {
   }
 
   getPlaceById(placeId: string){
-    return this.database.object('places/' + placeId);
+    return this.database.object('places2/' + placeId);
   }
 
   addPlace(thePlace: Place) {

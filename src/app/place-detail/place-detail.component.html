@@ -1,4 +1,6 @@
 <div class="card">
-  <h3>{{placeToDisplay.name}}</h3>
-  <h3>{{placeToDisplay.id}}</h3>
+  <p>hi</p>
+  {{(placeToDisplay | async)?.name }}
+  <!-- <h3>{{(placeToDisplay |async)?.name}}</h3> -->
+  <!-- <h3>{{placeToDisplay.id}}</h3> -->
 </div>

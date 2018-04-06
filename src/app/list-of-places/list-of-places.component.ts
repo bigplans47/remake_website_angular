@@ -16,15 +16,6 @@ export class ListOfPlacesComponent implements OnInit {
   @Input() childPlacesList: Place[];
   @Output() clickSender = new EventEmitter();
 
-  // places: Place[];
-  // places : Place [] = [
-  //   new Place('place1', 5, 'picture_url'),
-  //   new Place('place2', 5, 'picture_url'),
-  //   new Place('place3', 5, 'picture_url'),
-  //   new Place('place4', 5, 'picture_url')
-  // ]
-
-
   constructor(private router: Router, private placeService: PlaceService){}
 
   ngOnInit() {
@@ -38,8 +29,8 @@ export class ListOfPlacesComponent implements OnInit {
 
 
   goToDetailPage(singlePlace){
-    console.log('test')
-    this.router.navigate(['places', singlePlace.id])
+    // this.router.navigate(['places', singlePlace.id])
+    this.router.navigate(['places', singlePlace.$key]);
   }
 
 

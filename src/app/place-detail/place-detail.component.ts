@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Place } from '../models/place.model';
 import { PlaceService } from '../place.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 
 @Component({
@@ -24,7 +25,9 @@ export class PlaceDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters)=>{
       this.placeId = urlParameters['id'];
+      console.log(this.placeId)
     });
-    this.placeToDisplay = this.placeService.getPlaceById(this.placeId);  }
+    this.placeToDisplay = this.placeService.getPlaceById(this.placeId);
+  console.log(this.placeToDisplay.$key)  }
 
 }
