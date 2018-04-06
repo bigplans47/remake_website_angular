@@ -18,4 +18,8 @@ export class EditComponent implements OnInit {
     this.placeService.updatePlace(thisPlace)
   }
 
+  deletePlace(thePlace){
+    this.placeService.deletePlace(thePlace);
+  }
+
 }

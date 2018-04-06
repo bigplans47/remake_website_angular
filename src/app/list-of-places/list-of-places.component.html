@@ -11,24 +11,25 @@
     <h4>LIKES</h4>
   </div>
 </div>
-
-<div class="row" *ngFor="let singlePlace of places | async">
-  <div class="col-md-3">
-    <h4>{{singlePlace.name}}</h4>
+<div *ngFor="let singlePlace of places | async">
+  <div class="row">
+    <div class="col-md-3">
+      <h4>{{singlePlace.name}}</h4>
+    </div>
+    <div class="col-md-1">
+      <h4>{{singlePlace.rating}}</h4>
+    </div>
+    <div class="col-md-1">
+      <h4>{{singlePlace.likes}}</h4>
+    </div>
+    <div class="col-md-1">
+      <button class="btn btn-primary btn-sm" type="button" (click)="editButtonClicked(singlePlace)" name="button">Like</button>
+    </div>
+    <div class="col-md-1">
+      <button class="btn btn-info btn-sm" type="button" (click)="goToDetailPage(singlePlace)" name="button">See info</button>
+    </div>
+    <br>
   </div>
-  <div class="col-md-1">
-    <h4>{{singlePlace.rating}}</h4>
-  </div>
-  <div class="col-md-1">
-    <h4>{{singlePlace.likes}}</h4>
-  </div>
-  <div class="col-md-1">
-    <button class="btn btn-success btn-sm" type="button" (click)="editButtonClicked(singlePlace)" name="button">Like</button>
-  </div>
-  <div class="col-md-1">
-    <button class="btn btn-info btn-sm" type="button" (click)="goToDetailPage(singlePlace)" name="button">See info</button>
-  </div>
-  <br>
   <div *ngIf="currentRoute==='/admin' ">
     <app-edit [selectedPlace]="singlePlace"></app-edit>
   </div>

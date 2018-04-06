@@ -31,5 +31,11 @@ export class PlaceService {
       picture: thePlaceUpdating.picture
     });
   }
-  
+
+  deletePlace(thePlaceToDelete){
+    let thePlaceToDeleteNow = this.getPlaceById(thePlaceToDelete.$key)
+      thePlaceToDeleteNow.remove();
+    }
+
+
 }
