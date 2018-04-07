@@ -1,7 +1,9 @@
 .imageHere{
   width: 50%;
+  border-radius: 5em;
 }
 
 .card{
   margin: 30px;
+  background-color: gray;
 }

@@ -1,5 +1,5 @@
 <hr>
-<p class="sightsIntro">Look at the Sights and landmarks in Budapest</p>
+<p class="sightsIntro card">Look at the Sights and landmarks in Budapest</p>
 <div class="row">
   <div class="col-md-3">
     <h4>NAME</h4>
@@ -11,7 +11,7 @@
     <h4>LIKES</h4>
   </div>
 </div>
-<div *ngFor="let singlePlace of places | async">
+<div *ngFor="let singlePlace of places | async" class="card">
   <div class="row">
     <div class="col-md-3">
       <h4>{{singlePlace.name}}</h4>

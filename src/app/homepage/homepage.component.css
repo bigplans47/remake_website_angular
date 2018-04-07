@@ -55,7 +55,10 @@
 }
 
 .jumbotron {
-  background-image: url("http://allhdwallpapers.com/wp-content/uploads/2015/06/Budapest-7.jpg"); 
+  background-image: url("http://allhdwallpapers.com/wp-content/uploads/2015/06/Budapest-7.jpg");
+  max-height: 100%;
+  padding: 10em;
+  background-repeat: no-repeat
 }
 
 /* MAYBE KEEP */
@@ -95,23 +98,6 @@
   padding-right: 5px;
   padding-left: 150px;
   padding-top: 30px;
-}
-
-.aImage {
-  width: 200px;
-  display: inline-block;
-  height:20px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  /* display: inline; */
-  background: #ADD8E6;
-  padding: 10px;
-  padding-top: 20px;
-  background: url("assets/tripAdvisorLogo.png") center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color: white;
 }
 
 .search{

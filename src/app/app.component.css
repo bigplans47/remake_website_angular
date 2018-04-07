@@ -6,9 +6,14 @@ body{
   font-size: 30px;
 }
 
-#picture{
+/* #picture{
   background: url("http://jonvilma.com/images/budapest-15.jpg") left;
   background-repeat: no-repeat;
   background-size: 80%;
-  height: 100px;
+  height: 40px;
+} */
+
+.logo{
+  max-width: 20%;
+  height: auto;
 }
