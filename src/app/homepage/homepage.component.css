@@ -56,54 +56,9 @@
 
 .jumbotron {
   background-image: url("http://allhdwallpapers.com/wp-content/uploads/2015/06/Budapest-7.jpg");
-  max-height: 100%;
   padding: 10em;
-  background-repeat: no-repeat
-}
-
-/* MAYBE KEEP */
-.manImg {
-  width: 200px;
-}
-
-.placeholder1 {
-  height: 50px;
-  width: 200px;
-  background-color: yellow;
-  position: relative;
-}
-
-.aHeader{
-  display: inline-block;
-  height: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  font-family: Arial;
-  background: #ADD8E6;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-top: 30px;
-  /* margin: 2px; */
-}
-
-.aHeaderDot{
-  display: inline-block;
-  height: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  font-family: Arial;
-  background: #ADD8E6;
-  padding-right: 5px;
-  padding-left: 150px;
-  padding-top: 30px;
-}
-
-.search{
-   background: url("assets/mainViewBudapest.jpg") center;
-   /* background-color: lightblue; */
-   height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
 }
 
 .searchText {
@@ -111,9 +66,8 @@
   font-weight: bold;
   font-size: 32px;
   top:30%;
-  color: white;
+  color: black;
   left:30%;
-  background-color: #2F4F4F;
   border-radius: 10px;
   padding: 5px;
 }
@@ -128,32 +82,8 @@
   border-radius: 20px;
 }
 
-
-
-
-
-#displayAd {
-  color: black;
-}
-
-.info {
-  width: 100vw;
-}
-
-.info .money{
-  color: #00a680;
+.money{
   font-size: 28px;
-  font-family: Arial;
-}
-
-a:hover {
-  color: #00a680;
-}
-
-.inline{
-  display: inline-block;
-}
-
-.compares{
-  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
 }
