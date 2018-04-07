@@ -4,24 +4,57 @@ Remake the Trip Advisor website using the Javascript Angular 5 framework. This s
 
 To Test Locally
 
-git clone to your desktop, in terminal go to the root directory $ npm install -y to install all required packages. To see the site $ng serve and in your browser go to url http://localhost:4200/
+git clone to your desktop, in terminal go to the root directory $ npm install -y to install all required packages.
+
+Note you also have to have a Firebase account and setup a database for the site to show. Go to firebase, click add project, go to database, click get started, click the 3 vertical dots and select import json, import budapest-site-export.json, go to rules menu at add in the following:
+
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+then go to project overview, click add Firebase to your web app, copy the var confir object:
+
+var config = {
+    apiKey: "xxx",
+    authDomain: "xxx",
+    databaseURL: "https://xxx",
+    projectId: "xxx",
+    storageBucket: "xxx",
+    messagingSenderId: "xxx"
+  };
+
+now open folder src, open folder app, make a file in app called api-keys.ts and type 'export var masterFirebaseConfig={ }' paste in the object properties from above between the curly brackets, see below:
+
+export var masterFirebaseConfig = {
+  apiKey: "xxx",
+  authDomain: "xxx",
+  databaseURL: "https://xxx",
+  projectId: "xxx",
+  storageBucket: "xxx",
+  messagingSenderId: "xxx"
+}
+
+To see the site in terminal type the 2 words $ng serve    and in your browser go to url http://localhost:4200/
 
 Specifications:
-More directives (practice with ngIf, ngFor, and more).
-Full CRUD functionality that changes your models.
-Firebase (a noSQL database) instead of a hard-coded dataset.
-Seed data for your database.
-Pipes for filtering data.
-A router for adding additional pages.
-Authentication and route guards.
-Deployment (as a dry run for next week).
-API calls.
-CSS styling.
-Tests using Jasmine and Protractor.
+Has directives (practice with ngIf, ngFor, and more).
+Has Full CRUD functionality that changes your models.
+Has Firebase (a noSQL database) instead of a hard-coded dataset.
+Has Seed data for your database.
+No Pipes for filtering data.
+Has A router for adding additional pages.
+No Authentication and route guards.
+Has Deployment (as a dry run for next week). https://budapest-site.firebaseapp.com
+No API calls.
+Has CSS styling.
+No user created tests using Jasmine and Protractor.
 
 Technologies Used
 
-Angular, API, Node, JS
+Angular, API, Node, JS, Firebase
 
 Support and contact details
 

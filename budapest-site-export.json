@@ -1,0 +1,29 @@
+{
+  "places2" : {
+    "0" : {
+      "id" : "1",
+      "name" : "Chain Bridge",
+      "picture" : "http://www.bestourism.com/img/items/big/860/Chain-Bridge_Beautiful-panorama_3338.jpg",
+      "rating" : "5"
+    },
+    "1" : {
+      "id" : "2",
+      "name" : "Hungarian Parliament Building",
+      "picture" : "https://www.panoramatours.com/fileadmin/_processed_/csm_budapest-parlament-tagsueber_49ac5ac97e.jpg",
+      "rating" : "5"
+    },
+    "2" : {
+      "id" : "3",
+      "name" : "Buda Castle",
+      "picture" : "https://www.planetware.com/photos-large/H/hungary-budapest-buda-castle.jpg",
+      "rating" : "5"
+    },
+    "-L9QqRudJdR-PgTWhCCT" : {
+      "likes" : 100,
+      "location" : "Budapest",
+      "name" : "Szechenyi Baths",
+      "picture" : "http://szechenyispabaths.com/wp-content/uploads/2013/06/Szechenyi-Spa-Baths-Press-Photo-Outdoor-Pool.jpg",
+      "rating" : "5"
+    }
+  }
+}
